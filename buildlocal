@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "Deleting config symlink"
+rm -f _config.yml
+ln -s _config.yml.local _config.yml
+
+echo "Building and serving locally"
+bundle exec jekyll build 
+bundle exec jekyll serve
