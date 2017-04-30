@@ -1,3 +1,11 @@
 #!/bin/sh
 
+echo "Deleting config symlink"
+rm -f _config.yml
+ln -s _config.yml.live _config.yml
+
+echo "Building and uploading to s3 bucket"
 bundle exec jekyll build 
+
+echo "Uploading to s3 bucket"
+aws s3 sync ./_site s3://shaunb.co.uk/
