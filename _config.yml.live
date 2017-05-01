@@ -17,6 +17,9 @@ owner:
   github: kernow5000
   instagram: kern5000
 
+# turn on social links in footer
+share: yes
+
 # Background image to be tiled on all pages
 background: 
 

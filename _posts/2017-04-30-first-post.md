@@ -3,7 +3,7 @@ layout: post
 title: Hello Internet!
 description: "First post using Jekyll static site engine"
 modified: 2017-04-30
-tags: [first post]
+tags: [ aws ]
 ---
 
 I've literally just set this site up in about 10 minutes. I have been investigating hosting static sites on Amazons S3 service, 
@@ -19,8 +19,6 @@ It is how you say, very 2017 and 'serverless'
 ### So, what am I going to use this for?
 
 Mainly just little bits of code, thoughts, and stuff like that. 
-
-*By the way, every page after this is just the default ones, so ..*
 
 Stay tuned!
 
