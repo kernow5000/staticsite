@@ -7,7 +7,5 @@ node_modules
 Gemfile.lock
 .sass-cache
 .jekyll-metadata
-buildlive
-buildlocal
 Shaun Bradley.pdf
 
