@@ -1,9 +1,8 @@
 #!/bin/sh
 
 echo "Building and uploading to s3 bucket"
-bundle exec jekyll build --config _config.live.yml
+bundle exec jekyll build --config ./_config.live.yml
 
 echo "Uploading to s3 bucket"
-#s3cmd --delete-removed sync _site/ s3://shaunb.co.uk/
+aws s3 sync ./_site s3://shaunb.co.uk/
 
-s3cmd --delete-removed --add-header='Content-Encoding: gzip' sync _site/ s3://shaunb.co.uk/
