@@ -4,5 +4,5 @@ echo "Building and uploading to s3 bucket"
 bundle exec jekyll build --config ./_config.live.yml
 
 echo "Uploading to s3 bucket"
-aws s3 sync ./_site s3://shaunb.co.uk/
+s3cmd sync _site s3://shaunb.co.uk/
 

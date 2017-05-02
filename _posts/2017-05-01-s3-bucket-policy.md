@@ -32,7 +32,7 @@ Here's one you can use which is for access *by everyone on the internet*
 }
 ```
 
-Replace *bucketname* with the alias to your S3 bucket. So in this case mine would be
+Replace *mybucketname* with the alias to your S3 bucket. So in this case mine would be
 *shaunb.co.uk*
 
 You should be able to get to the files in this bucket from anywhere now. 
