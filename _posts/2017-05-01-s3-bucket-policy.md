@@ -10,7 +10,8 @@ I forgot to mention this earlier in a post about how this site is set up, but in
 a site on S3, or have acces to files, you will need to apply an S3 Bucket Policy to the bucket. 
 
 In this Policy, which is just JSON, and is related to the part of Amazon Web Services I probably
-least understand which is IAM. I can't even remember what is stands for. 
+least understand which is IAM. I can't even remember what is stands for, but it deals with privilege management,
+from an API, console user, and resources such as EC2 instances.
 
 Anyway, you can lock down S3 buckets to certain IP addresses with this JSON policy, which you
 can apply to the bucket in the frontend. 
@@ -32,7 +33,7 @@ Here's one you can use which is for access *by everyone on the internet*
 }
 ```
 
-Replace *bucketname* with the alias to your S3 bucket. So in this case mine would be
+Replace *mybucketname* with the alias to your S3 bucket. So in this case mine would be
 *shaunb.co.uk*
 
 You should be able to get to the files in this bucket from anywhere now. 
